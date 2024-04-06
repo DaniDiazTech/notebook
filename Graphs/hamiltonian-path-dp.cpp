@@ -16,6 +16,8 @@ we can use a subset, and the ending to v to solve the problem.
 
 In: Adjacency matrix, number of nodes
 Out: Exists hamiltonian path
+
+Tested: https://codeforces.com/contest/1950/submission/255328975
 */
 
 bool is_hamiltonian(vector<vector<int>> &adj, int n){
