@@ -6,9 +6,10 @@ using namespace std;
 const int mod = 1e9 + 7;
 
 /*
-Tested: https://codeforces.com/gym/104758/submission/255399948
-General matrix multiplication:
+Tested: https://cses.fi/problemset/result/8944332/
+*/
 
+/*
 Given A (m * n), and B (n * p) matrices,
 compute C = AB, of size (m * p)
 where C_(ij) = sum(k -> [0, n))( A_(ik) * B_(kj))
