@@ -4,7 +4,7 @@ struct point{
   T x, y;
 
   point(){
-    x = y = 0.0;
+    x = y = 0;
   }
 
   point(T xx, T yy){
