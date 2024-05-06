@@ -1,8 +1,35 @@
+
+typedef double T;
 struct point{
-  double x, y;
-  point(int xx, int yy){
-    x = xx * 1.0;
-    y = yy * 1.0;
+  T x, y;
+
+  point(){
+    x = y = 0.0;
+  }
+
+  point(T xx, T yy){
+    x = xx;
+    y = yy;
+  }
+
+  point operator + (point p){
+    return {x + p.x, y + p.y};
+  }
+
+  point operator * (T s){
+    return {s * x, s * y};
+  }
+
+  bool operator == (point p){
+    return x == p.x && y== p.y;
+  }
+
+  bool operator != (point p){
+    return !(*this == p);
+  }
+
+  T dot(point p){
+    return p.x * x + p.y *y;
   }
   /*
   Returns true if the line between the two points
@@ -14,7 +41,7 @@ struct point{
       return 0;
     }
     else{
-      s = (y - p.x)  / (x - p.x);
+      s = ( 1.0 * (y - p.y))  / ( 1.0 * (x - p.x));
       return 1;
     }
   }
