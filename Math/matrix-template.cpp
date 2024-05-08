@@ -41,7 +41,7 @@ template<typename T> struct matrix{
     matrix C(M, N);
     for (int i = 0;i < M; i++){
       for (int j = 0;j < N; j++){
-        C.A[i][j] = A[i][j] + B.A[i][j];
+        C.A[i][j] = ( ((A[i][j] + B.A[i][j]) % mod) + mod) % mod;
       }
     }
     return C;
@@ -56,7 +56,7 @@ template<typename T> struct matrix{
         T sum = 0;
           for (int k = 0; k < N; k++){
           sum += A[i][k] * B.A[k][j];
-          sum = ( ((sum) % mod) + mod) % mod;
+          sum = ( (sum % mod) + mod) % mod;
         }
         C.A[i][j] = sum;
       }
