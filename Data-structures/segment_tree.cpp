@@ -27,7 +27,7 @@ struct segtree{
 
   void build(int v, int l, int r, vector<T> &a){
     if (l == r){
-      t[v] = a[l--];
+      t[v] = a[l];
     }
     else{
       int m = (l + r) /2 ;
