@@ -37,7 +37,7 @@ struct segtree{
     }
   }
 
-  T get(int l, int r){
+  T query(int l, int r){
     return query(1, 0, N - 1, l, r);
   }
 
@@ -56,7 +56,7 @@ struct segtree{
     );
   }
 
-  void put(int pos, int val){
+  void update(int pos, int val){
     update(1, 0, N - 1, pos, val);
   }
 
