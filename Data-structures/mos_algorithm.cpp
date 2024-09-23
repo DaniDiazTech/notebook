@@ -3,7 +3,7 @@ Answer offlines queries based on an ordering that guarantees
 O((n + q)sqrt(n))
 
 Set block = sqrt(n)
-Uses global variables
+Uses global variables and other data structures if needed.
 */
 int block;
 struct Query{
