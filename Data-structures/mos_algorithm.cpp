@@ -4,7 +4,7 @@ O((n + q)sqrt(n))
 
 Set block = sqrt(n)
 Uses global variables and other data structures if needed.
-Used when: Can transition between +-[l,r] rapidly.
+Used when: Can transition between [l +-1,r+-1] rapidly.
 */
 int block;
 struct Query{
