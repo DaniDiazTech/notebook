@@ -35,12 +35,11 @@ struct Query {
 	int l, r, ind;
 	int64_t ord;
  
-	inline void calcOrder() {
+	void calcOrder() {
 		ord = hilbertOrder(l, r, 21, 0);
 	}
-};
- 
-inline bool operator<(const Query &a, const Query &b) {
-	return a.ord < b.ord;
-}
 
+  bool operator < (Query &b){
+    return ord < b.ord;
+  }
+};
