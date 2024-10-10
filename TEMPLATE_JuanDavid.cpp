@@ -22,6 +22,6 @@ int main(){
     #ifdef LOCAL
     freopen("entra.in","r",stdin);
     #endif
-    ios_base::sync_with_stdio();
-    cin.tie();
+    ios_base::sync_with_stdio(0);
+    cin.tie(NULL);
 }
