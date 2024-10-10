@@ -51,7 +51,7 @@ struct mbm {
     d[u] = INF;
     return false;
   }
-  int max_matching() {//finds de maximum bipartite matching
+  int max_matching() {//finds the maximum bipartite matching
     int ans = 0;
     while(bfs()) {
       for(int u = 0; u < l; u++) {
