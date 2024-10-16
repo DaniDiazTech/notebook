@@ -5,11 +5,11 @@ Complexity: O(n)
 Tested: https://codeforces.com/contest/1968/submission/285218366
 */
 
-const unsigned long long  MOD[2] = { 1001864327, 1001265673};
+const unsigned long long  MOD[2] = { 1001864327, 1001265673};//primes
 struct hashing {
     vector<ll>values[2] ;
     vector<ll> pot[2];
-    ll base=26;
+    ll base=29; //prime
     //creates two hashes in vector 'values' over string s
     hashing (string s){
         int n=s.size();
