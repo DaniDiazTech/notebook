@@ -1,9 +1,8 @@
-// The diameter of a tree is the length of the longest path
-// between any two nodes.
+// The diameter of a tree is the length of the longest path between any two nodes.
 // In this algorithm the length of a path is considered as
 // the number of edges in the path.
 
-// This algorith returns the value of the diameter
+// This algorithm returns the value of the diameter
 
 // Time complexity: O(|V|)
 // Space complexity: O(1)
